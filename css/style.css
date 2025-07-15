@@ -1,0 +1,131 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* تنسيق العنوان */
+  h1 {
+    font-size: 2.5rem;
+    color: #ff6f61;
+  }
+
+  /* تنسيق الفقرة */
+  p {
+    font-size: 1.2rem;
+    max-width: 600px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-top: 15px;
+  }
+
+  /* تنسيق الصورة */
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  img {
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* تأثير عند تمرير الماوس */
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  /* رسالة التفاعل */
+  .hover-text {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ff6f61;
+    font-weight: bold;
+  }
+
+  /* زر تشغيل الصوت */
+  .play-button {
+    background: #ff6f61;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  .play-button:hover {
+    background: #ff8a80;
+    transform: scale(1.1);
+  }
+  @media (max-width: 600px) {
+    body {
+      padding: 20px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    img {
+      width: 250px; /* تصغير الصورة */
+    }
+
+    p {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+
+    .play-button {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  }
+
+  /* 🔻 التابلت (من 600px إلى 900px) */
+  @media (max-width: 900px) {
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    img {
+      width: 280px;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  /* 🔻 الشاشات الكبيرة (أكثر من 1200px) */
+  @media (min-width: 1200px) {
+    img {
+      width: 350px;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
